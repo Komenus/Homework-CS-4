@@ -4,7 +4,19 @@
 Console.Clear();
 Console.WriteLine("Введите число А");
 int a = int.Parse(Console.ReadLine());
-Console.WriteLine("Введите число А");
+Console.WriteLine("Введите число B");
 int b = int.Parse(Console.ReadLine());
-double result = Math.Pow(a, b);
-Console.WriteLine($"Число A в натуральной степени числа B {result}");
+int result = a;
+// double result = Math.Pow(a, b);
+// Console.WriteLine($"Число A в натуральной степени числа B {result}");
+int stepen(int num, int grade)
+{
+    if (grade == 0) return   1;
+    int result = a;
+    for (int i = 2; b >= i; i++)
+    {
+        result = result * num;
+    }
+    return result;
+}
+Console.WriteLine($"Число {a} в натуральной степени числа {b} = {stepen(a,b)}");
